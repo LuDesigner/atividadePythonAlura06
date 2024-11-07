@@ -63,7 +63,7 @@ class Livro:
     @staticmethod
     def verificar_disponibilidade_ano():
         try:
-            ano_pesquisado = int(input('Digite o ano que deseja procurar: '))
+            ano_pesquisado = int(input('\nDigite o ano que deseja procurar: '))
             livros_encontrados = False
             for livro in Livro.lista_de_livros:
                 if ano_pesquisado == livro.ano_publicacao:
@@ -130,7 +130,7 @@ class Livro:
     def exibir_opcoes_verificar():
         # Exibe as opções de verificação de disponibilidade
         opcoes_verificar = [
-            '1. Verificar por nome',
+            '\n1. Verificar por nome',
             '2. Verificar por data',
             '3. Voltar ao menu principal'
         ]
